@@ -1,12 +1,14 @@
-import { sign, verify } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import { config } from "dotenv";
+
+const { sign, verify } = jwt 
 
 config();
 
 function createToken(user){
     return sign({
         emailAdd: user.emailAdd,
-        userpwd: userPwd
+        userPwd: user.userPwd
     },
     process.env.SECRET_KEY,
     {
