@@ -34,3 +34,7 @@ class Products {
         })
     }
 }
+
+export {
+    Products
+}
