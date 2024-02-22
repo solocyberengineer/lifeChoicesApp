@@ -5,7 +5,7 @@ import { config } from "dotenv";
 
 config();
 
-const ROUNDS = process.env.ROUNDS;
+const ROUNDS = 10;
 
 class Users {
     fetchUser(req, res){
